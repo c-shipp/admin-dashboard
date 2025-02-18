@@ -268,3 +268,7 @@ h5 {
   margin-bottom: 0;
   font-size: 0.75rem;
 }
+
+.icon-card:hover {
+  transform: scale(1.1);
+}
