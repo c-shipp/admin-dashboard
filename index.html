@@ -1,170 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <div class="sidebar">
-        <div id="dashboard">
-            <img id="logo" src="icons/dash.svg" alt="logo image of dashboard">
-            <a href="">Dashboard</a>
+      <div>
+        <div class="dash" id="dashboard">
+          <img id="logo" src="icons/dash.svg" alt="logo image of dashboard" />
+          <a href="">Dashboard</a>
         </div>
-        <div id="dash">
-            <div>
-                <img src="icons/home.svg" alt="home icon">
-                <a href="">Home</a>
-            </div>
-            <div id="dash">
-                <img src="icons/profile.svg" alt="profile icon">
-                <a href="">Profile</a>
-            </div>
-            <div id="dash">
-                <img src="icons/messages.svg" alt="messages icon">
-                <a href="">Messages</a>
-            </div>
-            <div id="dash">
-                <img src="icons/history.svg" alt="history icon">
-                <a href="">History</a>
-            </div>
-            <div id="dash">
-                <img src="icons/tasks.svg" alt="tasks icon">
-                <a href="">Tasks</a>
-            </div>
-            <div id="dash">
-                <img src="icons/communities.svg" alt="communities icon">
-                <a href="">Communities</a>
-            </div>
+      </div>
+      <div>
+        <div class="dash">
+          <img src="icons/home.svg" alt="home icon" />
+          <a href="">Home</a>
         </div>
-        <div id="dash">
-            <div>
-                <img src="icons/settings.svg" alt="settings icon">
-                <a href="">Settings</a>
-            </div>
-            <div id="dash">
-                <img src="icons/support.svg" alt="support icon">
-                <a href="">Support</a>
-            </div>
-            <div id="dash">
-                <img src="icons/privacy.svg" alt="privacy icon">
-                <a href="">Privacy</a>
-            </div>
+        <div class="dash">
+          <img src="icons/profile.svg" alt="profile icon" />
+          <a href="">Profile</a>
         </div>
+        <div class="dash">
+          <img src="icons/messages.svg" alt="messages icon" />
+          <a href="">Messages</a>
+        </div>
+        <div class="dash">
+          <img src="icons/history.svg" alt="history icon" />
+          <a href="">History</a>
+        </div>
+        <div class="dash">
+          <img src="icons/tasks.svg" alt="tasks icon" />
+          <a href="">Tasks</a>
+        </div>
+        <div class="dash">
+          <img src="icons/communities.svg" alt="communities icon" />
+          <a href="">Communities</a>
+        </div>
+      </div>
+      <div>
+        <div class="dash">
+          <img src="icons/settings.svg" alt="settings icon" />
+          <a href="">Settings</a>
+        </div>
+        <div class="dash">
+          <img src="icons/support.svg" alt="support icon" />
+          <a href="">Support</a>
+        </div>
+        <div class="dash">
+          <img src="icons/privacy.svg" alt="privacy icon" />
+          <a href="">Privacy</a>
+        </div>
+      </div>
     </div>
     <div class="searchbar">
-        <img src="icons/magnify.svg" alt="magnifying glass for searchbar">
+      <div class="searchbarForm">
+        <a href=""
+          ><img
+            id="search-icon"
+            src="icons/magnify.svg"
+            alt="magnifying glass for searchbar"
+        /></a>
         <form action="/search/">
-        <input type="search" name="search" id="Search" placeholder="Search...">
-        <input type="submit" value="Search">
+          <input
+            type="search"
+            name="search"
+            id="Search"
+            placeholder="Search..."
+          />
+          <input type="submit" value="Search" />
         </form>
-        <img id="reminder" src="icons/bell.svg" alt="reminder bell image">
-        <img id="face-icon" src="icons/face.svg" alt="face icon of user">
+      </div>
+      <div class="userInfo">
+        <img id="reminder" src="icons/bell.svg" alt="reminder bell image" />
+        <img id="face-icon" src="icons/face.svg" alt="face icon of user" />
         <a href="">Morgan Oakley</a>
+      </div>
     </div>
     <div class="user">
-        <img id="user-face" src="icons/face.svg" alt="face icon for user">
-        <p>Hi there,</p><br>
-        <p>Morgan Oakley (@morgan)</p>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+      <div>
+        <img id="user-face" src="icons/face.svg" alt="face icon for user" />
+      </div>
+      <div class="hi-there">
+        <p id="hi">Hi there,</p>
+        <p id="morgan">Morgan Oakley (@morgan)</p>
+      </div>
+      <div class="buttons">
+        <button class="button-style">New</button>
+        <button class="button-style">Upload</button>
+        <button class="button-style">Share</button>
+      </div>
     </div>
     <div class="cards">
-        <!-- <div> -->
-            <!-- <h2>Your Projects</h2> -->
-            <!-- <h2>Announcements</h2> -->
-        <!-- </div> -->
-        <!-- <div> -->
-            <div class="card-grid">
-                <div class="card-a">
-                    <h3>Super Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                </div>
-                <div class="card-b">
-                    <h3>Less Cool Project</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                <div class="card-a">
-                    <h3>Impossible App</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                <div class="card-b">
-                    <h3>Easy Peasy App</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                <div class="card-a">
-                    <h3>Ad Blocker</h3>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                <div class="card-b">
-                    <h3>Money Maker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <div>
-                    <img src="icons/bookmark.svg" alt="bookmark">
-                    <img src="icons/eye.svg" alt="eye icon">
-                    <img src="icons/share.svg" alt="share icon">
-                    </div>
-                </div>
-            <div class="cards-right">
-                <div class="maintenance">
-                    <h4>Site Maintenance</h4>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <hr>
-                    <h4>Community Share Day</h4>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                    <h4>Upload Privacy Policy</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-                <div class="trending">
-                    <!-- <div> -->
-                        <!-- <h2>Trending</h2> -->
-                    <!-- <div> -->
-                    <div>
-                        <img id="tegan" src="icons/female-user.svg" alt="female user icon">
-                        <h5>@Tegan</h5>
-                        <p>World Peace Builder</p>
-                    </div>
-                    <div>
-                        <img id="morgan" src="icons/male-user.svg" alt="male user icon">
-                        <h5>@morgan</h5>
-                        <p>Super Cool Project</p>
-                    </div>
-                    <div>
-                        <img id="kendall" src="icons/female-user.svg" alt="female user icon">
-                        <h5>@kendall</h5>
-                        <p>Life Changing App</p>
-                    </div>
-                    <div>
-                        <img id="alex" src="icons/male-user.svg" alt="male user icon">
-                        <h5>@alex</h5>
-                        <p>No Traffic Maker</p>
-                </div>
-            </div>
+      <div class="card-grid">
+        <div class="card card-a row-1">
+          <h3>Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
         </div>
+
+        <div class="card card-b row-1">
+          <h3>Less Cool Project</h3>
+          <p>Duis aute irure dolor in reprehenderit...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
+        </div>
+
+        <div class="card card-a row-2">
+          <h3>Impossible App</h3>
+          <p>Ut enim ad minim veniam...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
+        </div>
+
+        <div class="card card-b row-2">
+          <h3>Easy Peasy App</h3>
+          <p>Excepteur sint occaecat cupidatat non proident...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
+        </div>
+
+        <div class="card card-a row-3">
+          <h3>Ad Blocker</h3>
+          <p>Sed do eiusmod tempor incididunt...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
+        </div>
+
+        <div class="card card-b row-3">
+          <h3>Money Maker</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="icons/bookmark.svg" alt="bookmark" />
+            <img src="icons/eye.svg" alt="eye icon" />
+            <img src="icons/share.svg" alt="share icon" />
+          </div>
+        </div>
+
+        <div class="maintenance card-c">
+          <div class="maintenance-content">
+            <h4>Site Maintenance</h4>
+            <p>Sed do eiusmod tempor incididunt...</p>
+            <hr />
+            <h4>Community Share Day</h4>
+            <p>Ut enim ad minim veniam...</p>
+            <hr />
+            <h4>Upload Privacy Policy</h4>
+            <p>Duis aute irure dolor in reprehenderit...</p>
+          </div>
+        </div>
+
+        <div class="trending card-c">
+          <div class="trending-content">
+            <div class="user-info">
+              <img
+                id="tegan"
+                src="icons/female-user.svg"
+                alt="female user icon"
+              />
+              <div class="user-card">
+                <h5>@Tegan</h5>
+                <p>World Peace Builder</p>
+              </div>
+            </div>
+            <div class="user-info">
+              <img id="morgan" src="icons/male-user.svg" alt="male user icon" />
+              <div class="user-card">
+                <h5>@morgan</h5>
+                <p>Super Cool Project</p>
+              </div>
+            </div>
+            <div class="user-info">
+              <img
+                id="kendall"
+                src="icons/female-user.svg"
+                alt="female user icon"
+              />
+              <div class="user-card">
+                <h5>@kendall</h5>
+                <p>Life Changing App</p>
+              </div>
+            </div>
+            <div class="user-info">
+              <img id="alex" src="icons/male-user.svg" alt="male user icon" />
+              <div class="user-card">
+                <h5>@alex</h5>
+                <p>No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
